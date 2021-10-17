@@ -1,0 +1,23 @@
+.chat_container{
+  display: grid;
+  grid-template-rows: 10% 90%; 
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "heading    login"
+                       "chatfeed   messages";
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid var(--primary_light);
+  width: 30em;
+  height: 30em;
+  background-color: var(--primary_dark);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.icons{
+  font-size: 2em;
+  cursor: pointer;
+}

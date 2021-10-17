@@ -1,0 +1,99 @@
+@import '../../../UI/varieble.scss';
+
+
+.projectSection{
+    position: absolute;
+    height: 100vh;
+    top: 200vh;
+    left: 0;
+    width: 100%;
+    background-color: $secondary-dark;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_container{
+   
+   position:relative;
+   align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    height: 15rem;
+   width: 90%; 
+  
+ transform:translatex(-50% );
+ 
+}
+
+
+.slide_card{
+    display: block;
+    position: relative;
+     align-items: center;
+     justify-content: center;
+     height: 10rem;
+     padding:0 2px 0 2px ;
+     
+ }
+
+ .card_img{
+     position: relative;
+     height: 100%;
+     width: 100%;
+    cursor: pointer;
+ }
+
+/*
+.active{
+    display: block;
+}
+
+.slide_top{
+    display: inline;
+    position: absolute;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: var(--secondary_dark);
+    cursor: pointer;
+}
+
+.slide_nav{
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: var(--secondary_dark);
+    cursor: pointer;
+}
+
+.slide_nav:hover{
+    font-size:30px;
+}
+
+.nav_left{
+   position: absolute;
+   left: 5px;
+}
+.nav_right{
+    position: absolute;
+    right: 5px;
+}
+
+
+
+
+ <img src={item.image} alt="images" width='100px' height='100px'/>
+
+.slide_card:hover{
+    height: 8em;
+    cursor: pointer;
+}
+
+
+
+*/

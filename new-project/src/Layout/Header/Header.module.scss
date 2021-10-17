@@ -1,0 +1,55 @@
+@import '../../UI/varieble.scss';
+
+.header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary_dark;
+  height: 10vh;
+  left: 0vw;
+    width: 100%;
+  top:0;
+  
+}
+
+
+
+.logo {
+  position: absolute;
+  cursor: pointer;
+  animation: App-logo-spin infinite 60s linear;
+  font-size: 1rem;
+  top:0;
+
+  height: fit-content;
+  width: fit-content;
+  z-index: 1;
+}
+
+.hamburger {
+  position: absolute;
+  left: 10px;
+  width: 3rem;
+  height: 4rem;
+  cursor: pointer;
+
+}
+
+
+@keyframes App-logo-spin {
+  0% {
+    transform:rotate(0deg)   }
+
+ 50%{
+    transform:rotate(180deg)  ;
+  }
+
+  100%{
+    transform:rotate(360deg) 
+  }
+}
+
+
+
+

@@ -1,0 +1,10 @@
+.message {
+  display: flex;
+  border: 1px solid var(--primary_light);
+  height: 100%;
+  width: 100%;
+  grid-area: messages;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}

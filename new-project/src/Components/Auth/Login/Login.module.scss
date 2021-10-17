@@ -1,0 +1,59 @@
+@import '../../../UI/varieble.scss';
+
+.login {
+  width: 90%;
+ 
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color:$primary-dark;
+}
+
+.control {
+  margin: 1rem 0;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.control label,
+.control input {
+  display: block;
+}
+
+.control label {
+  font-weight: bold;
+  flex: 1;
+  color:$secondary_dark;
+  margin-bottom: 0.5rem;
+}
+
+.control input {
+  flex: 3;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid $primary_light;
+}
+
+.control input:focus {
+  outline: none;
+  border-color: $primary_light;
+  background: #f5ebb6;
+}
+
+.control.invalid input {
+  border-color: rgb(245, 243, 146);
+  background: #f5ebb6;
+}
+
+.actions {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .control {
+    align-items: center;
+    flex-direction: row;
+  }
+
+}

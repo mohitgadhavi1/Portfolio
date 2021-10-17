@@ -1,0 +1,32 @@
+.social_logins{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    grid-area: login;
+    width: 20%;
+    right: -80%;
+}
+
+.social_login-button{
+  position: relative;
+  background-color:rgba(0, 0, 0, 0)
+}
+
+.facebook{
+    color: rgb(38, 38, 128);
+    font-size: 25px;  
+}
+
+.google{
+    color: rgb(206, 74, 74);
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .social_logins{
+        right: -50%;
+        width: 50%;
+    }
+}

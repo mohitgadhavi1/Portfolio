@@ -1,0 +1,33 @@
+@import './UI/varieble.scss';
+
+*,
+*::after,
+*::backdrop {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/* use rem instead of px and use % in html to match font-setting in browser  for better pratice. */
+
+html {
+  font-size: 80%;
+}
+
+body {
+  display:flex;
+  background-color:$primary_light;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.7;
+  font-family: sans-serif;
+  font-weight: 400;
+  color:$secondary_light;
+}
+
+
+
+
+
