@@ -6,6 +6,7 @@ import ProjectSlider from "./Sections/ProjectSlider/ProjectSlider";
 import Footer from "./Footer/Footer";
 import Hero from "./Sections/Hero/Hero";
 import About from './Sections/About/About';
+import Contact from './Sections/Contact/Contact';
 
 function Layout() {
     return (
@@ -18,6 +19,7 @@ function Layout() {
           <Hero />
           <About/>
           <ProjectSlider />
+          <Contact/>
           <Footer/>
         </Route>
         </div>
