@@ -1,50 +1,61 @@
-.form_container {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-  justify-content: center;
-  border-color: var(--primary_dark);
-  border-style: solid;
-  position: relative;
+@import '../../UI/varieble.scss';
 
-  min-width: 95%;
+.form_container {
+  display: flex;
+ flex-direction: column;
+   align-items:flex-start;
+   justify-content: center;
+  border-color: $primary_dark;
+  border-style: solid;
+  position: absolute;
+height: 60%;
+  width: 50%;
+
+  
 }
 
+
 .container_input {
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-color: var(--secondary_dark);
-  background-color: var(--primary_dark);
-  color: var(--secondary_light);
+  border: 0;
+  outline: 0;
+ // line-height: 2rem;
+  border-bottom:2px solid $secondary_dark;
+  background-color: transparent;
+  color: $secondary_light;
+ // 
+}
+input[type=number]::-webkit-inner-spin-button {
+  appearance: none;
+
 }
 
 .container_label {
-  color: var(--secondary_dark);
+ 
+  color: $secondary_dark;
   text-align: left;
-  margin-right: 15px;
+  margin-bottom: 3rem;
+  position: relative;
 }
 
 .container_button{
-  background-color: var(--secondary_dark);
+  position: absolute;
+  background-color: $secondary_dark;
   border-radius: 5px;
   border: none;
-  padding: 10px;
+  padding: 10px 15px;
   cursor:pointer;
+  color: $primary_light;
+  align-self: center;
+  bottom: 0;
+  margin-bottom: 1rem;
+}
+.right{
+  align-self: flex-end;
+  top: -50%;
+  margin-right: 6rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .form_container {
-    align-items: center;
-    justify-content: center;
-    border-style: solid;
-
-    
-  }
-  .container_input {
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    max-width: 100%;
-  }
+.left{
+  top: 5rem;
+  margin-left: 6rem;
 }

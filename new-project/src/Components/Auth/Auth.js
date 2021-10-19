@@ -34,7 +34,7 @@ function Auth(props) {
     return (
       <div className='auth-page'>
         
-        <h1>This Section is in Devlopment phase.Come back soon</h1>
+        <h1 className={"authHeading"}>This Section is in Devlopment phase.Come back soon</h1>
       {/* <Header isAuthenticated={isLoggedIn} onLogout={logoutHandler} /> */}
      
    <div className='auth-container' > 

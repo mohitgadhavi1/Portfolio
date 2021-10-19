@@ -14,32 +14,38 @@ import PermIdentityOutlinedIcon from '@material-ui/icons/PermIdentityOutlined';
     {
         title: 'About Me',
         path: '/about-me',
-        icon:<PermIdentityOutlinedIcon/>,
+      //  icon:<PermIdentityOutlinedIcon/>,
         cName: 'nav-text'
     },
     {
         title: 'Services',
         path: '/sevices',
-        icon:<Ai.AiOutlineHome/>,
+       // icon:<Ai.AiOutlineHome/>,
      cName: 'nav-text'
     },
     {
         title: 'Projects',
         path: '/projects',
-        icon:<RiProjectorLine value={{color:"var(--secondary_dark)"}}/>,
+     //   icon:<RiProjectorLine value={{color:"var(--secondary_dark)"}}/>,
         cName: 'nav-text'
    },
    {
     title: 'Contact',
     path: '/contact',
-    icon:<RiProjectorLine value={{color:"var(--secondary_dark)"}}/>,
+   // icon:<RiProjectorLine value={{color:"var(--secondary_dark)"}}/>,
+    cName: 'nav-text'
+},
+{
+    title: 'Blog',
+    path: '/blog',
+   // icon:<PermIdentityOutlinedIcon/>,
     cName: 'nav-text'
 },
 
     {
         title: 'Login / Register',
         path: '/auth',
-        icon:<Ai.AiOutlineLogin/>,
+      //  icon:<Ai.AiOutlineLogin/>,
         cName: 'nav-text'
                         
     },

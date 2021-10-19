@@ -34,8 +34,8 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="form_container" method="POST">
-      <label className="container_label">
+    <form className="form_container" method="POST" >
+      <label className="container_label left">
         Your Name:
         <br />
         <input
@@ -45,11 +45,11 @@ export default function ContactForm() {
           placeholder="Enter your Name"
           type="text"
           autoComplete="off"
-          className="container_input"
+          className="container_input "
         />
       </label>
 
-      <label className="container_label">
+      <label className="container_label left">
         E-mail:
         <br />
         <input
@@ -59,11 +59,11 @@ export default function ContactForm() {
           placeholder="abc@email.com"
           type="email"
           autoComplete="off"
-          className="container_input"
+          className="container_input "
         />
       </label>
 
-      <label className="container_label">
+      <label className="container_label left">
         Mobile No:
         <br />
         <input
@@ -73,11 +73,11 @@ export default function ContactForm() {
           placeholder="10 Digit Mobile Number"
           type="number"
           autoComplete="off"
-          className="container_input"
+          className="container_input  "
         />
       </label>
 
-      <label className="container_label">
+      <label className="container_label right">
         Address:
         <br />
         <input
@@ -87,11 +87,11 @@ export default function ContactForm() {
           placeholder="Your Current Address"
           type="text"
           autoComplete="off"
-          className="container_input"
+          className="container_input  "
         />
       </label>
 
-      <label className="container_label">
+      <label className="container_label  right ">
         Message:
         <br />
         <textarea
