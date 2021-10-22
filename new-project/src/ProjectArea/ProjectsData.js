@@ -9,6 +9,32 @@ const SliderData = [
     },
   },
   {
+    title: "Instagram",
+    image:
+      "https://images.unsplash.com/photo-1611262588024-d12430b98920?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80",
+    cName: "slide_card",
+    path:function() {
+      return `/projects/${this.title}`;
+    },
+  },
+  {
+    title: "Netflix",
+    image:
+      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80",
+    cName: "slide_card",
+    path:function() {
+      return `/projects/${this.title}`;
+    },
+  },
+  {
+    title: "DuoCall",
+    image: "https://www.xda-developers.com/files/2017/03/1-google-duo.png",
+    cName: "slide_card",
+    path:function() {
+      return `/projects/${this.title}`;
+    },
+  },
+  {
     title: "StockStokr",
     image:
       "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
@@ -26,15 +52,7 @@ const SliderData = [
       return `/projects/${this.title}`;
     },
   },
-  {
-    title: "Netflix",
-    image:
-      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80",
-    cName: "slide_card",
-    path:function() {
-      return `/projects/${this.title}`;
-    },
-  },
+
   {
     title: "LocateU",
     image:
@@ -44,15 +62,7 @@ const SliderData = [
       return `/projects/${this.title}`;
     },
   },
-  {
-    title: "Instagram",
-    image:
-      "https://images.unsplash.com/photo-1611262588024-d12430b98920?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80",
-    cName: "slide_card",
-    path:function() {
-      return `/projects/${this.title}`;
-    },
-  },
+
   {
     title: "Getsby",
     image:
@@ -62,14 +72,7 @@ const SliderData = [
       return `/projects/${this.title}`;
     },
   },
-  {
-    title: "DuoCall",
-    image: "https://www.xda-developers.com/files/2017/03/1-google-duo.png",
-    cName: "slide_card",
-    path:function() {
-      return `/projects/${this.title}`;
-    },
-  },
+
 ];
 
 export default SliderData;

@@ -3,14 +3,7 @@
 
 
 .about{
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
     top: 100vh;
-    height: 100vh;
-    left: 0;
-    width: 100%;
 overflow-x: hidden;
 border-top: 1px solid $secondary_light;
     &-head{

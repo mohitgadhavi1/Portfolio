@@ -1,48 +1,37 @@
-@import '../../../UI/varieble.scss';
+@import "../../../UI/varieble.scss";
 
-
-.projectSection{
-    position: absolute;
-    height: 100vh;
-    top: 200vh;
-    left: 0;
-    width: 100%;
-    background-color: $secondary-dark;
-    justify-content: center;
-    align-items: center;
+.projectSection {
+  top: 200vh;
+  background-color: $secondary-dark;
 }
 
-.slider_container{
-   
-   position:relative;
-   align-items: center;
-    justify-content: center;
-    top: 50%;
-    left: 50%;
-    height: 15rem;
-   width: 90%; 
+.slider_container {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 80%;
+  left: 50%;
+  height: 10.2rem;
+  width: 90%;
+  border: 1px solid white;
+  transform: translate(-50%,-50%);
+}
+
+.slide_card {
+  display: block;
   
- transform:translatex(-50% );
- 
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  padding: 0 2px 0 2px;
 }
 
-
-.slide_card{
-    display: block;
-    position: relative;
-     align-items: center;
-     justify-content: center;
-     height: 10rem;
-     padding:0 2px 0 2px ;
-     
- }
-
- .card_img{
-     position: relative;
-     height: 100%;
-     width: 100%;
-    cursor: pointer;
- }
+.card_img {
+ 
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
 
 /*
 .active{

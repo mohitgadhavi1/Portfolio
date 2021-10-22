@@ -3,3 +3,18 @@
     flex-direction: column;
    
 }
+
+@mixin section_layout{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact-section,.about-section,.hero-section,.slider-section{
+    @include section_layout;
+}

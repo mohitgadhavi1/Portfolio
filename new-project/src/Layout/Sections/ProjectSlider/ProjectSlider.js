@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const ProjectSlider = () => {
+const ProjectSlider = (props) => {
 
     const settings = {
       dots: false,
@@ -18,7 +18,7 @@ const ProjectSlider = () => {
     };
 
     return (
-      <div className={classes.projectSection}>
+      <div className={`${classes.projectSection} ${props.className}`}>
       <div className={classes["slider_container"]}>
         <Slider {...settings}>
           {ProjectData.map((item, index) => {

@@ -1,0 +1,28 @@
+@import '../../../../UI/varieble.scss';
+
+.movie {
+    margin: 1rem;
+    padding:0 2rem 0 2rem;
+    background-color: $secondary_dark;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 12px;
+    text-align: center;
+    color: $primary_dark;
+  }
+  
+  .movie h2 {
+    font-size: 2rem;
+    color: $primary_light;
+  }
+  
+  .movie h3 {
+    color: #ebba27;
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .movies-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }

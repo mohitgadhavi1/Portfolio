@@ -3,10 +3,10 @@ import classes from "./Hero.module.scss";
 import Button from '../../../UI/Button';
 import HeroFrontImage from '../../../Components/assets/heroImage.png'
 
-function Hero() {
+function Hero(props) {
     return (
         <>
-        <div className={classes.hero}>
+        <div className={`${classes.hero} ${props.className}`}>
             <div className={classes['hero-text']}>
             <h1>Mohit Gadhavi</h1>
             <p>Front-End Engineer</p>
