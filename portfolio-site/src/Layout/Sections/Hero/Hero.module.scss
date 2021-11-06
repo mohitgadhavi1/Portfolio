@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Koh+Santepheap:wght@300&family=Lobster+Two:wght@700&display=swap');
+@import "../../../UI/varieble.scss";
+
+.hero {
+
+  top: 10vh;
+  height: 90vh;
+}
+
+.imgContainer{
+  position:absolute;
+  right: 0;
+ // border: 1px solid black;
+  overflow-x: hidden;
+
+  & > img{
+  animation: hero-front   10s linear;
+  }
+}
+
+@keyframes hero-front {
+  0% {
+    transform:translateX(35rem)   }
+
+//  50%{
+//     transform:translateX(15rem)  ;
+//   }
+
+  100%{
+    transform:translateX(0rem) 
+  }
+}
+
+
+
+
+.hero-text{
+
+  position:absolute;
+  left: 10rem;
+
+  & > h1{
+    font-size: 4rem;
+    text-shadow:1px 1px 2px $secondary-dark ;
+  }
+  & > p{
+   // font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.heroSocials{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  &>span{
+    font-size: 2rem;
+    &>a{
+      color: $secondary_dark;
+    }
+  }
+
+}

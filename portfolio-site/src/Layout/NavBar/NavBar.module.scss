@@ -1,0 +1,65 @@
+@import "../../UI/varieble.scss";
+
+.navbar{
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary_dark;
+  top: 10vh;
+  left: 0;
+  width: 25rem;
+  transition: 1s;
+  z-index: 5;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.backdrop{
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  z-index: 4;
+    
+}
+
+
+
+.navul {
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+}
+
+.nav-text {
+  padding: 2rem 0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid $primary_light;
+  color: $secondary_dark;
+  font-size: 1.5rem;
+  width: 100%;
+
+ &:hover {
+    background-color: $primary_light;
+  }
+
+  
+  
+}
+
+
+
+a:link {
+  text-decoration: none;
+}
+
