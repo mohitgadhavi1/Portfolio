@@ -1,48 +1,39 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./Header.module.scss";
-import Navigation from './Navigation';
-import LogoIcon from "../../UI/icons/LogoIcon";
+import Navigation from "./Navigation";
+
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IconContext } from "react-icons";
 import NavBar from "../NavBar/NavBar";
 
 export default function Header(props) {
-
   const [sidebar, setSidebar] = useState(false);
 
-
   const navbarHandler = () => {
-    
     setSidebar(!sidebar);
   };
 
- return (
-
-
+  return (
     <header className={classes.header}>
- 
       <IconContext.Provider
         value={{ color: "$secondary_dark", className: `${classes.hamburger}` }}
       >
-        {sidebar  ? (
-           <AiOutlineClose onClick={navbarHandler} />
+        {sidebar ? (
+          <AiOutlineClose onClick={navbarHandler} />
         ) : (
           <GiHamburgerMenu onClick={navbarHandler} />
         )}
       </IconContext.Provider>
 
-      {sidebar && <NavBar onClose={navbarHandler}/>}
+      {sidebar && <NavBar onClose={navbarHandler} />}
 
-<Link to='/'>
-  <div className={classes.logo}>
-    <LogoIcon />
-    </div>
-    </Link>
-      <Navigation isLoggedIn={props.isAuthenticated} onLogout={props.onLogout} />
+      <Navigation
+        isLoggedIn={props.isAuthenticated}
+        onLogout={props.onLogout}
+      />
     </header>
-    
   );
 }
 

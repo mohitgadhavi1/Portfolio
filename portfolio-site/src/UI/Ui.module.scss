@@ -1,11 +1,12 @@
-@import './varieble.scss';
+@import "./varieble.scss";
 
 .button {
   font: inherit;
   border: 1px solid $secondary_dark;
   background: $primary_light;
-  color:  $secondary_dark;
+  color: $secondary_dark;
   cursor: pointer;
+  transition: 0.5s;
   &:focus {
     outline: none;
   }
@@ -13,7 +14,7 @@
   &:hover,
   &:active {
     background: $secondary_dark;
-    color:  $primary_dark;
+    color: $primary_dark;
   }
 
   & :disabled,
@@ -32,7 +33,6 @@
   box-shadow: 0 2px 8px rgba(22, 22, 22, 0.5);
   border-radius: 10px;
 }
-
 
 .input {
   display: flex;
@@ -53,7 +53,7 @@
   }
 }
 
-li{
+li {
   list-style: none;
 }
 
@@ -73,8 +73,8 @@ span {
   }
 
   &__hover {
-     position: absolute;
-  
+    position: absolute;
+
     opacity: 0;
   }
 

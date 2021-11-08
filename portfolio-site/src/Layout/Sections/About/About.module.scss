@@ -3,7 +3,7 @@
 .about {
   top: 100vh;
   overflow-x: hidden;
-  border-top: 1px solid $secondary_light;
+  border-top: 1px solid $primary_dark;
   &-head {
     position: absolute;
     top: 0;
@@ -69,60 +69,56 @@
 
 .downbutton {
   top: 60%;
-  
 }
 
 .wrapper {
   position: absolute;
-  top: 30%;
+  top: 20%;
   right: 10%;
   height: 25rem;
   width: 55rem;
-  border: 1px solid black;
-
-overflow-y:scroll;
+  border: 1px solid $primary_dark;
+  border-radius: 1rem;
+  overflow-y: scroll;
 }
 
-
-
 .textbox {
-  animation: text 5s  linear infinite  ;
+  animation: text 5s linear infinite;
   height: 8rem;
-  
-  & >ul{
+
+  & > ul {
     margin: 1rem;
-    border: 1px solid $primary_dark;
-    &:hover{
-      cursor:pointer;
-      background-color:$primary_dark ;
-  }
- 
+    // border: 1px solid $primary_dark;
+    &:hover {
+      cursor: pointer;
+      background-color: $primary_dark;
+      border-radius: 1rem;
+    }
+
     & > li {
       font-size: 1.5rem;
       padding: 0.5rem;
       margin-right: 4rem;
       width: 100%;
       border-radius: 2px;
-    
     }
-}
+  }
 }
 
 // @keyframes text {
- 
+
 //   from {
 //     transform: translate(0%)  }
 
-  
 //   to{
 //     transform:translate(100%)
 //   }
 // }
 
-.itemData{
+.itemData {
   display: inline-flex;
-  & >li {
-    margin-left:1rem ;
+  & > li {
+    margin-left: 1rem;
     color: $secondary_dark;
   }
 }

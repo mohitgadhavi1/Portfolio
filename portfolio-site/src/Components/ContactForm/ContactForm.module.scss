@@ -1,49 +1,44 @@
-@import '../../UI/varieble.scss';
-
-
-
-
+@import "../../UI/varieble.scss";
 
 .form_container {
   display: grid;
- grid-template-columns: 1fr 1fr;
- grid-column-gap: 2rem;
-   align-items:center;
-   justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  align-items: center;
+  justify-content: center;
   border-color: $primary_dark;
   border-style: solid;
   position: absolute;
-height: 60%;
+  height: 60%;
   width: 50%;
-padding: 0 2rem 0 2rem;
-
+  padding: 0 2rem 0 2rem;
 }
 
- .form_input{ 
+.form_input {
   position: relative;
-
-
-
 }
 
-.form_input_label{
+.form_input_label {
   position: absolute;
-  top:-2.5rem;
+  top: -1.5rem;
   left: 0;
-  padding: 10px 0;
+  padding: 2rem 0;
   font-size: 16px;
   color: $secondary_dark;
-  
-  pointer-events: none;
-  transition: .5s;
-  pointer-events: none;
-  transition: .5s;
 
+  pointer-events: none;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.labelModifier {
+  padding: 0.4rem 0;
+  transition: 0.5s;
 }
 
-.form_input_field{
+.form_input_field {
   width: 100%;
- // padding: 1rem 0;
+
+  padding: 0.5rem 0;
   font-size: 16px;
   color: rgb(0, 0, 0);
   margin-bottom: 2rem;
@@ -51,21 +46,20 @@ padding: 0 2rem 0 2rem;
   border-bottom: 1px solid $secondary_light;
   outline: none;
   background: transparent;
- 
-    //  @include transform(translateY(-25px))
-    // &:focus+label,&:valid+label{
-    //   outline: 0;
-    //     color: #665856;
-    //     top: -1rem;
-    //     left: 0;
-    //     font-size: 12px;
-    // }
-    
+
+  //  @include transform(translateY(-25px))
+  // &:focus+label,&:valid+label{
+  //   outline: 0;
+  //     color: #665856;
+  //     top: -1rem;
+  //     left: 0;
+  //     font-size: 12px;
+  // }
 }
 
-.form_submit_button{
+.form_submit_button {
   position: absolute;
   bottom: 4rem;
   right: 9rem;
-  padding: .5rem 3rem;
+  padding: 0.5rem 3rem;
 }

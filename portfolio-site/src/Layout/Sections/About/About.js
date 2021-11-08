@@ -19,62 +19,64 @@ function About(props) {
       DESIGN: ["Figma", "Canva", "Adobe Xd"],
     },
 
-    Education: [
-      `Bachlor's of Engineering in Instrumentation Control`,
-      `Master's Degree in Computer Application (Pursuing)`,
-    ],
+    Education: {
+      Degree: [
+        `Bachlor's of Engineering in Instrumentation Control`,
+        `Master's Degree in Computer Application (Pursuing)`,
+      ],
+    },
   };
- 
 
-  const [listData, setListData] = useState(0);
+  const [counter, setCounter] = useState(0);
 
-const skills = aboutData.skills;
-const education = aboutData.Education;
+  const skills = aboutData.skills;
+  const Education = aboutData.Education;
 
-const clickHandler = (aboutData) => {
-
-    setListData(listData + 1 )
-  
-
-}
-console.log(Object.keys(aboutData).length);
+  // for (let i = 0; i < Object.keys(aboutData).length; i++) {
+  //   console.log(i);
+  // }
+  const clickHandler = () => {
+    if (counter < Object.keys(aboutData).length - 1) {
+      setCounter(counter + 1);
+    } else if (counter >= Object.keys(aboutData).length - 1) {
+      setCounter(0);
+    }
+  };
+  console.log(aboutData[0]);
+  // console.log(Object.keys(aboutData).length - 1);
 
   return (
     <div className={`${classes.about} ${props.className}`}>
       <div className={classes["about-head"]}>
         <h1>About me</h1>
-        <h3>
-          Hi, I Design and Develop cool Websites & Apps. Do check-out my Project
-          Section.
-        </h3>
       </div>
 
       <div className={classes.container}>
         <div className={classes.rounder}>
-          <h2>{Object.keys(aboutData)[listData]}</h2>
+          <h2>{Object.keys(aboutData)[counter]}</h2>
         </div>
-        <div  className={classes.wrapper}>
-        
-                  {Object.keys(skills).map((item) => {
-                    return (
-                      <>
-                      <div className={classes.textbox}>
-                      <ul >
-                      <li> {item} </li>
-                      
-                      {skills[item].map((data)=>{
-                        return <ul className={classes.itemData}><li>{data}</li></ul>
-                      })}
-                      </ul>
-                      </div>
-                       </>
-                    );
-                  })}
-               
+        <div className={classes.wrapper}>
+          {Object.keys(skills).map((item) => {
+            return (
+              <>
+                <div className={classes.textbox}>
+                  <ul>
+                    <li> {item} </li>
 
-         
+                    {skills[item].map((data) => {
+                      return (
+                        <ul className={classes.itemData}>
+                          <li>{data}</li>
+                        </ul>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </>
+            );
+          })}
         </div>
-        <Button className={classes.upbutton} onClick={clickHandler} >
+        <Button className={classes.upbutton} onClick={clickHandler}>
           <BsFillCaretUpFill />
         </Button>
         <Button className={classes.downbutton} onClick={clickHandler}>
